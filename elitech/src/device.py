@@ -1,4 +1,4 @@
-# Copyright 2023 Pascal COMBES <pascom@orange.fr>  - Major contributor & original author 
+# Copyright 2023 Pascal COMBES <pascom@orange.fr> - Major contributor & original author 
 # Copyright 2024 Sarang KULKARNI <github.public@sarangkulkarni.com>
 #
 #
@@ -75,7 +75,7 @@ class Device:
     def __init__(self, devPath):
         self.path = devPath
         if self.path and (type(self.path) is str):
-            self.path = Path(self.path)
+            self.path = Path.resolve(Path(self.path))
         if self.path and not self.path.exists():
             raise ValueError(f"Device \"{self.path}\" does not exist")
         self.__dev = None
