@@ -1,4 +1,5 @@
-# Copyright 2023 Pascal COMBES <pascom@orange.fr>
+# Copyright 2023 Pascal COMBES <pascom@orange.fr> - Major contributor & original author 
+# Copyright 2024 Sarang KULKARNI <github.public@sarangkulkarni.com>
 #
 # This file is part of python-elitech.
 #
@@ -20,7 +21,7 @@ from .commands import Command
 
 def main(argv):
     parser = argparse.ArgumentParser(description="Console tool to interact with Elitech temperature and humidity loggers")
-    parser.add_argument('-d', '--dev', '--device', action='store', default='',
+    parser.add_argument('-d', '--dev', '--device', action='store', default='/dev/hidraw.elitech1',
                         help='The device to interact with')
     parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.0')
     parser.add_argument('cmds', action='extend', nargs='+',

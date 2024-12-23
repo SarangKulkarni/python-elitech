@@ -32,5 +32,5 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0416", GROUP="dialout", TAG+="elitech", SYM
 # This device appears as FMSH MSC+HID.
 KERNEL=="hidraw*", ATTRS{idVendor}=="246c", ATTRS{idProduct}=="9001", GROUP="dialout", TAG+="elitech", SYMLINK+="hidraw.elitech_%n"
 
-# End of rule files
+# End of rules file
 LABEL="elitech_end"
