@@ -1,6 +1,8 @@
 [submodule "HIDParser"]
 	path = HIDParser
-	url = git@github.com:pasccom/python-hid-parser.git
+	url = https://github.com/pasccom/python-hid-parser.git
 [submodule "PythonUtils"]
 	path = PythonUtils
-	url = git@github.com:pasccom/PythonUtils.git
+	url = https://github.com/pasccom/PythonUtils.git
+
+
