@@ -30,7 +30,7 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="0416", GROUP="dialout", TAG+="elitech"
 
 # New versions of Elitech RC-5 also use hid. S/N: EFE247xxxxxx device uses hid and has vid:pid of 246c:9001. 
 # This device appears as FMSH MSC+HID.
-#KERNEL=="hidraw*", ATTRS{idVendor}=="246c", ATTR{idProduct}=="9001", GROUP="dialout", TAG+="elitech"
+KERNEL=="hidraw*", ATTRS{idVendor}=="246c", ATTR{idProduct}=="9001", GROUP="dialout", TAG+="elitech", 
 
 # End of rule files
 LABEL="elitech_end"
