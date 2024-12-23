@@ -1,4 +1,6 @@
-# Copyright 2023 Pascal COMBES <pascom@orange.fr>
+# Copyright 2023 Pascal COMBES <pascom@orange.fr>  - Major contributor & original author 
+# Copyright 2024 Sarang KULKARNI <github.public@sarangkulkarni.com>
+#
 #
 # This file is part of python-elitech.
 #
@@ -25,6 +27,7 @@ from hid_parser import ReportDescriptor, HIDComplianceWarning
 
 
 supportedDevices = [
+    {'VId': 0x246c, 'PId':0x9001, 'name': 'Elitech RC-5 S/N: EFE247x   '},
     {'VId': 0x04d8, 'PId':0x0033, 'name': 'Elitech RC-51'               },
     {'VId': 0x04d8, 'PId':0x0133, 'name': 'Elitech RC-51H'              },
     {'VId': 0x04d8, 'PId':0x3005, 'name': 'Elitech RC-5+'               },

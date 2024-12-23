@@ -33,7 +33,8 @@ column of the below table.
 
 | Name                         | Vendor Id  | Product Id | udev | Tested |
 |:-----------------------------|:----------:|:----------:|:----:|:------:|
-| Elitech RC-51                |   0x04d8   | 0x0033     | Yes  | No     |
+| Elitech RC-5 S/N: EFE247x    |   0x246c   |   0x9001   | Yes  | Partly |
+| Elitech RC-51                |   0x04d8   |   0x0033   | Yes  | No     |
 | Elitech RC-51H               |   0x04d8   |   0x0133   | Yes  | No     |
 | Elitech RC-5+                |   0x04d8   |   0x3005   | Yes  | Yes    |
 | Elitech RC-55                |   0x04d8   |   0x0037   | Yes  | No     |
@@ -54,6 +55,15 @@ column of the below table.
 |                              |   0x04d8   |   0xF564   | Yes  | No     |
 |                              |   0x0416   |   0x3A01   | Yes  | No     |
 |                              |   0x464d   |   0x0402   | No   | No     |
+
+
+For Elitech RC-5, there are at least two different hardware versions having
+the same model name. As of December 2024, devices with the more recent hardware
+seem to have serial numbers like EFE247xxxxxx and they use HID protocol for
+communication over USB. These are at least partially supported by this
+project (work in progress). Elitech RC-5 devices with older hardware use 
+a USB-to-serial chip and appear as a serial port when connected to a computer.
+These are not supported by this project. See the next paragraph for options.    
 
 If your device is not in this list:
   - Either it is an Elitech device of the previous generation, which used
